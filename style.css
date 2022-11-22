@@ -1,0 +1,20 @@
+header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#startButton {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+}
+
+h2 {
+  text-align:center;
+}
+
+#answers {
+  display: none;
+}
