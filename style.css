@@ -1,14 +1,48 @@
-header {
-    display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+:root {
+  --main-color: #48286f;
+  --main-color-hover: #8447ce;
 }
 
-#startButton {
+* {
+  font-family: Arial, sans-serif;
+}
+
+body{
   margin: 0;
-  position: absolute;
-  left: 50%;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+}
+
+
+
+#startButton {
+  width:80%;
+  padding: 10px;
+  margin-top: 60px;
+  text-align: center;
+  align-self: center;
+}
+
+#startButtonDiv{
+  display: block;
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color: var(--main-color-hover) ;
 }
 
 h2 {
@@ -16,5 +50,57 @@ h2 {
 }
 
 #answers {
+  display: none;
+  text-align: center;
+}
+
+.answerBtn {
+  width:80%;
+  padding: 10px;
+  margin: 6px;
+}
+
+
+.Card {
+  background-color: White;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+#grade {
+  margin-top: 40px;
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 80%;
+}
+
+ul>li:nth-child(odd){
+  background-color:  #d5bbf5;
+}
+
+ul {
+  text-align: start;
+  list-style-type: none;
+  width:90%;
+}​
+
+#gamePage {
+  display: block;
+}
+
+#highScoresPage {
+  display: none;
+}
+
+#initialsPage {
   display: none;
 }

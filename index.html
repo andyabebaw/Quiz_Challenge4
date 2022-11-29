@@ -10,21 +10,58 @@
 
 <body>
     <header>
-        <h3 id="start">View High Scores</h3>
+        <h3 id="highscores">View High Scores</h3>
         <h3 id="time"> Game Not Started</h3>
+
     </header>
 
-    <h2> This is a place holder question, correct?</h2>
-    <div id="answers">
-        <button class="btn">Answer A</button>
-        <button class="btn">Answer B</button>
-        <button class="btn">Answer C</button>
-        <button class="btn">Answer D</button>
+    <div id="gamePage">
+        <section class="Card">
+            <h2 id="question"> Click the start button below to start the game. </h2>
+            
+                <div id="answers">
+                    <button class="btn answerBtn" id="btnA">Answer A</button> <br/>
+                    <button class="btn answerBtn" id="btnB">Answer B</button> <br/>
+                    <button class="btn answerBtn" id="btnC">Answer C</button> <br/>
+                    <button class="btn answerBtn" id="btnD">Answer D</button>
+                </div>
+                
+           
+        </section>
+    
+        <div id = "startButtonDiv">
+            <button id="startButton" class="btn">Start Game</button>
+        </div>
+        
+    
+        <div id="grade">
+            <hr>
+            <h3 id="correctness"> Correct </h3>
+        </div>
+    </div>
+
+    <div id="initialsPage">
+        <div class = "Card">
+            <h1>ALL DONE!</h1>
+            <h2> Your Final Score is 5</h2>
+            <h2> Enter Initials: </h2>
+            <input type="text" id="initial">
+            <button class="btn" id="submit" >Submit</button>
+        </div>
+    </div>
+
+    <div id="highScoresPage">
+        <div class = "Card">
+            <h1>High Scores</h1>
+            <ul id="highScoreList">
+            </ul>
+            <button class="btn" id = "goBack">Go Back</button>
+            <button class="btn" id="clearHighscores">Clear Highscores</button>
+        </div>
     </div>
     
+   
 
-
-    <button id="startButton" class="btn">Start Game</button>
     <script src="script.js"></script>
 </body>
 </html>
