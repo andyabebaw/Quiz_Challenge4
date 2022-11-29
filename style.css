@@ -3,15 +3,18 @@
   --main-color-hover: #8447ce;
 }
 
+/* sets font for the whole page */
 * {
   font-family: Arial, sans-serif;
 }
 
+/* removes margin from body */
 body{
   margin: 0;
   text-align: center;
 }
 
+/* sets up headers background and text color, padding and spacing */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,8 +24,7 @@ header {
   font-weight: bold;
 }
 
-
-
+/* defines start buttons width alignment and padding/margin */
 #startButton {
   width:80%;
   padding: 10px;
@@ -31,16 +33,19 @@ header {
   align-self: center;
 }
 
+/* intiliazes start button to visible */
 #startButtonDiv{
   display: block;
 }
 
+/* defines base button */
 .btn {
   background-color: var(--main-color);
   color: white;
   font-weight: bold;
 }
 
+/* defines button hover text */
 .btn:hover{
   background-color: var(--main-color-hover) ;
 }
@@ -60,7 +65,7 @@ h2 {
   margin: 6px;
 }
 
-
+/* defines card background color, shadow and alignment */
 .Card {
   background-color: White;
   margin-left: auto;
@@ -83,6 +88,7 @@ hr {
   width: 80%;
 }
 
+/* styles every odd high score to be light purple */
 ul>li:nth-child(odd){
   background-color:  #d5bbf5;
 }
@@ -93,14 +99,15 @@ ul {
   width:90%;
 }​
 
+/* initializes page to visible */
 #gamePage {
   display: block;
 }
-
+/* initializes page to invisible */
 #highScoresPage {
   display: none;
 }
-
+/* initializes page to invisible */
 #initialsPage {
   display: none;
 }
