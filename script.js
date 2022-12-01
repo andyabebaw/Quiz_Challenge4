@@ -5,14 +5,18 @@ var submitBtn = document.getElementById("submit");
 var goBackBtn = document.getElementById("goBack");
 var highScoresBtn = document.getElementById("highscores");
 var clearHighScoresBtn = document.getElementById("clearHighscores");
+
 var buttonA = document.getElementById("btnA");
 var buttonB = document.getElementById("btnB");
 var buttonC = document.getElementById("btnC");
 var buttonD = document.getElementById("btnD");
+
 var question = document.getElementById("question");
 var correctness = document.getElementById("correctness");
 var finalScore = document.getElementById("finalScore");
+
 var time = document.querySelector("#time");
+
 var answersDiv = document.getElementById("answers");
 var initialInput = document.getElementById("initial");
 var scoreList = document.getElementById("highScoreList");
@@ -159,7 +163,7 @@ function compare( firstPerson, otherPerson) {
 
 }
 
-// Add event listener to buttons that casuse a page change
+// Add event listener to buttons that cause a page change
 startBtn.addEventListener("click", startGame);
 highScoresBtn.addEventListener("click", viewHighScores);
 submitBtn.addEventListener("click", submitScore);
@@ -199,8 +203,15 @@ class Question {
 var question1 = new Question("What do you need at the end of every line of code?", "!","$", ":", ";", ";");
 var question2 = new Question("What git command makes a new directory?", "touch", "mkdir", "pull", "push", "mkdir");
 var question3 = new Question("How do you check the current status of the repo?","git status","mkdir", "pull", "push", "git status")
+var question4 = new Question("What git command makes a new file?", "touch", "mkdir", "pull", "push", "touch");
+var question5 = new Question("What git command updates your local branch with changes from remote?", "touch", "mkdir", "pull", "push", "pull");
+var question6 = new Question("How do you check if two variables are equal", "=", "&&", "??", "===", "===");
+var question7 = new Question("Whis is an example of a boolean", "8", "and", "true", "45.5", "true");
+var question8 = new Question("Commonly used data types do not include:", "strings", "booleans", "alerts", "numbers", "alerts");
+var question9 = new Question("The condition of in an if/else statement is enclosed within ________.", "quotes", "curly brackets", "parathesis", "square brackets", "curly brackets");
+var question10 = new Question("Arrays in javascript can be used to store ________.", "numbers and strings","other arrays", "booleans", "all of the above", "all of the above");
 
-var questions = [question1,question2,question3];
+var questions = [question1,question2,question3,question4,question5,question6,question7, question8, question9, question10];
 var questions = shuffle(questions);
 
 //stolen from online, didnt feel like writing a new one
