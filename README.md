@@ -25,9 +25,9 @@ This website was built to serve as a fun quiz to brush up on topics covered in c
 
 This website can be used to quiz yourself on CS topics.
 
-![alt StartPage](./Assets/startpage.png)
-![alt QuestionPage](./Assets/questionpage.png)
-![alt Highscore](./Assets//highscore.png)
+![alt StartPage](./Assets/images/startpage.png)
+![alt QuestionPage](./Assets/images/questionpage.png)
+![alt Highscore](./Assets/images/highscore.png)
 
 ## Features
 
